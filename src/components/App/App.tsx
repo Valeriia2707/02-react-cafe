@@ -4,7 +4,7 @@ import type { Votes, VoteType } from '../../types/votes';
 import CafeInfo from '../CafeInfo/CafeInfo';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
-import Notifications from '../Notification/Notifications';
+import Notification from '../Notification/Notification';
 
 const  initialVotes: Votes = {
     good: 0,
@@ -41,7 +41,7 @@ export default function App() {
           positiveRate={positiveRate}
         />
       ) : (
-        <Notifications />
+        <Notification />
       )}
 </div>
 
